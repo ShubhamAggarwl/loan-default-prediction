@@ -78,7 +78,6 @@ Manual lending decisions are inconsistent, subjective, and prone to delays, lead
   - Gradient Boosting
   - Logistic Regression
   - Decision Tree
-- Used grid search and cross-validation for hyperparameter tuning.
 
 ### **3. Evaluation**
 - Metrics:
@@ -97,6 +96,8 @@ Manual lending decisions are inconsistent, subjective, and prone to delays, lead
 ## **Key Findings**
 
 - The **Random Forest Classifier** achieved the highest accuracy of **0.908444**, but precision, recall, and F1 scores were **0.000000**, highlighting its poor performance in predicting the minority class.
+### Model Performance Metrics Heatmap
+<img src="assets/images/heatmap-models.png" alt="Model Performance Metrics Heatmap" width="600">
 
 - **Balanced Random Forest** model showed a recall of **0.476525**, significantly outperforming other models in identifying the minority class, with an accuracy of **0.539305** and AUC-ROC of **0.517680**.
 
@@ -119,6 +120,13 @@ Manual lending decisions are inconsistent, subjective, and prone to delays, lead
 | XGBoost                  | 0.7         | 0.3        | 0.907061  | 0.088235   | 0.001619   | 0.003180   | 0.515296  |
 | LightGBM                 | 0.7         | 0.3        | 0.908444  | 0.000000   | 0.000000   | 0.000000   | 0.520241  |
 | CatBoost                 | 0.7         | 0.3        | 0.908395  | 0.000000   | 0.000000   | 0.000000   | 0.524337  |
+
+
+### Metric Trends Across Models
+<img src="assets/images/Metric-trend.png" alt="Metric Trends Across Models" width="600">
+
+### Model Accuracy
+<img src="assets/images/Accuracy.png" alt="Model Accuracy" width="600">
 
 
 ## **Conclusion**
