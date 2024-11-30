@@ -96,36 +96,29 @@ Manual lending decisions are inconsistent, subjective, and prone to delays, lead
 
 ## **Key Findings**
 
-1. **Top-Performing Models**:  
-   - The **Random Forest Classifier** emerged as the most effective model, achieving the highest overall performance across metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.  
-   - **Balanced Random Forest** effectively addressed class imbalance, significantly improving recall for the minority class (loan defaults) while maintaining robust overall performance.
+- The **Random Forest Classifier** achieved the highest accuracy of **0.908444**, but precision, recall, and F1 scores were **0.000000**, highlighting its poor performance in predicting the minority class.
 
-2. **Effect of Sampling Techniques**:  
-   - **Oversampling** (e.g., using SMOTE) increased recall by exposing the model to more instances of the minority class. However, it introduced synthetic data, leading to a slight decrease in precision.  
-   - **Undersampling** balanced class distribution by reducing the majority class, resulting in a better trade-off between precision and recall while preserving data quality. A 60:40 undersampling ratio provided the best results.
+- **Balanced Random Forest** model showed a recall of **0.476525**, significantly outperforming other models in identifying the minority class, with an accuracy of **0.539305** and AUC-ROC of **0.517680**.
 
-3. **Optimal Train-Test Split Ratio**:  
-   - A **60:40 split** was identified as the optimal ratio, striking a balance between retaining sufficient training data and minimizing overfitting. Lower train ratios (e.g., 55:45) further reduced overfitting but slightly compromised generalization on unseen data.
+- The highest AUC-ROC score of **0.532165** was achieved by **HistGradientBoosting**, indicating moderate separation capability between the classes.
 
-4. **Model Explainability**:  
-   - Feature importance analysis revealed critical predictors of loan defaults, such as `Credit_History`, `LoanAmount`, `ApplicantIncome`, and `Property_Area`.  
-   - SHAP and LIME provided local and global interpretability, enhancing trust and accountability in the models.
-
-5. **Business Implications**:  
-   - Models like Random Forest can transform the loan eligibility process by providing automated, data-driven predictions, minimizing default risk, and improving financial inclusion.
-   - Balanced sampling strategies and explainable AI frameworks ensure ethical, transparent, and fair decision-making.
+- The imbalanced dataset resulted in several models (e.g., **LightGBM, Extra Trees, CatBoost**) achieving zero precision, recall, and F1 scores despite high accuracy values (~**0.908**).
 
    
 
 ## **Results Summary**
 
-| Model                  | Accuracy | Precision | Recall | F1 Score | AUC-ROC |
-|------------------------|----------|-----------|--------|----------|---------|
-| Random Forest          | 0.9097   | 0.90      | 0.91   | 0.90     | 0.92    |
-| Balanced Random Forest | 0.5410   | 0.50      | 0.55   | 0.52     | 0.51    |
-| AdaBoost               | 0.9090   | 0.89      | 0.90   | 0.89     | 0.91    |
-| Gradient Boosting      | 0.9086   | 0.88      | 0.90   | 0.89     | 0.91    |
-| Logistic Regression    | 0.5191   | 0.48      | 0.50   | 0.49     | 0.50    |
+| Model                    | Train Ratio | Test Ratio | Accuracy  | Precision  | Recall     | F1 Score   | ROC AUC   |
+|--------------------------|-------------|------------|-----------|------------|------------|------------|-----------|
+| Balanced Random Forest   | 0.7         | 0.3        | 0.539305  | 0.095594   | 0.476525   | 0.159243   | 0.517680  |
+| Random Forest Classifier | 0.7         | 0.3        | 0.908444  | 0.000000   | 0.000000   | 0.000000   | 0.511748  |
+| HistGradientBoosting     | 0.7         | 0.3        | 0.908444  | 0.000000   | 0.000000   | 0.000000   | 0.532165  |
+| Gradient Boosting        | 0.7         | 0.3        | 0.908296  | 0.000000   | 0.000000   | 0.000000   | 0.529089  |
+| Logistic Regression      | 0.7         | 0.3        | 0.497900  | 0.095669   | 0.530491   | 0.162104   | 0.509727  |
+| Extra Trees Classifier   | 0.7         | 0.3        | 0.908444  | 0.000000   | 0.000000   | 0.000000   | 0.509418  |
+| XGBoost                  | 0.7         | 0.3        | 0.907061  | 0.088235   | 0.001619   | 0.003180   | 0.515296  |
+| LightGBM                 | 0.7         | 0.3        | 0.908444  | 0.000000   | 0.000000   | 0.000000   | 0.520241  |
+| CatBoost                 | 0.7         | 0.3        | 0.908395  | 0.000000   | 0.000000   | 0.000000   | 0.524337  |
 
 
 ## **Conclusion**
