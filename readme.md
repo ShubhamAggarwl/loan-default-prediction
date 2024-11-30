@@ -122,6 +122,9 @@ Manual lending decisions are inconsistent, subjective, and prone to delays, lead
 | CatBoost                 | 0.7         | 0.3        | 0.908395  | 0.000000   | 0.000000   | 0.000000   | 0.524337  |
 
 
+### Model Performance Comparison Across Metrics 
+<img src="assets/images/Model Performance Comparision.png" alt="Model Performance Comparison Across Metrics (70:30 Split)" width="700">
+
 ### Metric Trends Across Models
 <img src="assets/images/Metric-trend.png" alt="Metric Trends Across Models" width="600">
 
@@ -202,6 +205,14 @@ This research demonstrates the potential of machine learning for loan eligibilit
 ### 7. Unique Values in Categorical Columns
 - The bar plot shows the number of unique values in categorical columns, helping identify features with high cardinality or limited diversity.
 <img src="assets/images/Unique Values in Categorical Columns.png" alt="Unique Values in Categorical Columns" width="700">
+
+### 8. Expanded Model Metrics Comparison
+- The bar plot compares the performance metrics of various models (accuracy, precision, recall, etc.) based on the evaluation results.
+<img src="assets/images/Expanded Model Metrics Comparision.png" alt="Expanded Model Metrics Comparison" width="700">
+
+### 9. Model Performance Comparison Across Metrics (70:30 Split)
+- The bar plot compares model performance metrics for a 70:30 train-test split, highlighting metrics such as accuracy, precision, and ROC AUC.
+<img src="assets/images/Model Performance Comparision.png" alt="Model Performance Comparison Across Metrics (70:30 Split)" width="700">
 
 
 ### **Important Notes**
