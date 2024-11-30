@@ -167,6 +167,43 @@ This research demonstrates the potential of machine learning for loan eligibilit
      - SHAP or other explainability visualizations.
 
 
+  ## Visualizations
+
+### 1. Class Distribution Before Sampling
+- The bar plot shows the distribution of the loan status before applying any sampling techniques. The dataset is highly imbalanced, with a significantly larger number of "Not Granted" loans compared to "Granted" loans.
+<img src="assets/images/Class Distribution before Sampling.png" alt="Class Distribution Before Sampling" width="500">
+
+
+### 2. Class Distribution After Random Undersampling
+- The bar plot shows the balanced distribution of the loan status after applying random undersampling, which reduces the majority class to match the minority class.
+<img src="assets/images/Class Distribution After Random Oversampling.png" alt="Class Distribution After Random Undersampling" width="500">
+
+
+### 3. Class Distribution After SMOTE Oversampling
+- The bar plot demonstrates the balanced distribution of the loan status after applying SMOTE (Synthetic Minority Oversampling Technique), which increases the minority class by generating synthetic samples.
+<img src="assets/images/Class Distribution After Smote  Oversampling.png" alt="Class Distribution After SMOTE Oversampling" width="500">
+
+
+### 4. Count of Loans by Grade
+- The bar plot shows the distribution of loan grades. Grades B and C have the highest number of loans, while Grade G has the least.
+<img src="assets/images/Count of Loan by Grade.png" alt="Count of Loans by Grade" width="550">
+
+
+### 5. Loan Amount by Grade
+- The box plot visualizes the distribution of loan amounts across different grades, showing how the loan amounts vary by grade.
+<img src="assets/images/Loan by Grade.png" alt="Loan Amount by Grade" width="550">
+
+
+### 6. Skewness of Numerical Features
+- The bar plot represents the skewness of numerical features in the dataset. Highly skewed features may require transformations to normalize their distributions.
+<img src="assets/images/Skewness of Numerical Features.png" alt="Skewness of Numerical Features" width="700">
+
+
+### 7. Unique Values in Categorical Columns
+- The bar plot shows the number of unique values in categorical columns, helping identify features with high cardinality or limited diversity.
+<img src="assets/images/Unique Values in Categorical Columns.png" alt="Unique Values in Categorical Columns" width="700">
+
+
 ### **Important Notes**
 - Ensure the dataset structure matches the notebook's expectations.
 - For questions, refer to the comments and markdown sections within the notebook.
