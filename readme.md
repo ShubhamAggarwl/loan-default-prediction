@@ -142,7 +142,7 @@ This research demonstrates the potential of machine learning for loan eligibilit
 1. **Clone the Repository**:
    - Open your terminal or command prompt and run the following commands:
      ```bash
-     git clone https://github.com/your-username/loan-eligibility-prediction
+     git clone https://github.com/Shubham Aggarwal/loan-eligibility-prediction
      cd loan-eligibility-prediction
      ```
 
