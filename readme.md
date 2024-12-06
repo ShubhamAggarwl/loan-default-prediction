@@ -60,13 +60,13 @@ Manual lending decisions are inconsistent, subjective, and prone to delays. Trad
 We performed exploratory data analysis to identify class imbalance and variable distributions. The data was cleaned by removing irrelevant features and applying one-hot encoding for categorical variables. Class imbalance was addressed using SMOTE and undersampling techniques.
 
 The bar plot shows the distribution of the loan status before applying any sampling techniques.  
-<img src="assets/images/Class Distribution before Sampling.png" alt="Class Distribution Before Sampling" width="500">
+<img src="assets/images/class-dist-sampling.png" alt="Class Distribution Before Sampling" width="500">
 
 The bar plot shows the balanced distribution of the loan status after applying random undersampling, which reduces the majority class to match the minority class.  
-<img src="assets/images/Class Distribution After Random Oversampling.png" alt="Class Distribution After Random Undersampling" width="500">
+<img src="assets/images/class-dist-after-ros.png" alt="Class Distribution After Random Undersampling" width="500">
 
 The bar plot demonstrates the balanced distribution of the loan status after applying SMOTE (Synthetic Minority Oversampling Technique), which increases the minority class by generating synthetic samples.  
-<img src="assets/images/Class Distribution After Smote  Oversampling.png" alt="Class Distribution After SMOTE Oversampling" width="500">
+<img src="assets/images/class-dist-after-smote.png" alt="Class Distribution After SMOTE Oversampling" width="500">
 
 ### 2. Modeling
 - Random Forest
@@ -84,7 +84,7 @@ The bar plot demonstrates the balanced distribution of the loan status after app
 - AUC-ROC - Model’s ability to differentiate between classes  
 
 The chart below illustrates the accuracy comparison of evaluated models.  
-<img src="assets/images/Accuracy.png" alt="Model Accuracy" width="600">
+<img src="assets/images/accuracy.png" alt="Model Accuracy" width="600">
 
 ### 4. Explainability
 - Global Interpretability - Feature importance and Partial Dependence Plots
