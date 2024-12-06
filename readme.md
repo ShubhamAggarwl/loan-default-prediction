@@ -60,7 +60,7 @@ Manual lending decisions are inconsistent, subjective, and prone to delays. Trad
 We performed exploratory data analysis to identify class imbalance and variable distributions. The data was cleaned by removing irrelevant features and applying one-hot encoding for categorical variables. Class imbalance was addressed using SMOTE and undersampling techniques.
 
 The bar plot shows the distribution of the loan status before applying any sampling techniques.  
-<img src="assets/images/class-dist-sampling.png" alt="Class Distribution Before Sampling" width="500">
+<img src="assets/images/class-dist-before-sampling.png" alt="Class Distribution Before Sampling" width="500">
 
 The bar plot shows the balanced distribution of the loan status after applying random undersampling, which reduces the majority class to match the minority class.  
 <img src="assets/images/class-dist-after-ros.png" alt="Class Distribution After Random Undersampling" width="500">
