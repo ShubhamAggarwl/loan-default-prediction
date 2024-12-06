@@ -76,9 +76,6 @@ The bar plot demonstrates the balanced distribution of the loan status after app
 - Logistic Regression
 - Decision Tree
 
-The bar plot compares the performance metrics of various models (accuracy, precision, recall, etc.) based on the evaluation results.  
-<img src="assets/images/Expanded Model Metrics Comparision.png" alt="Expanded Model Metrics Comparison" width="700">
-
 ### 3. Evaluation
 - Accuracy - Overall correctness of predictions
 - Precision - Fraction of correctly predicted positives
